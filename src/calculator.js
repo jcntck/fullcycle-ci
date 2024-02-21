@@ -11,13 +11,18 @@ function times(a, b) {
 }
 
 function div(a, b) {
-  if (b === 0) throw new Error('0 is not divisible')
+  if (b === 0) throw new Error("0 is not divisible");
   return a / b;
+}
+
+function pow(a, b) {
+  return Math.pow(a, b);
 }
 
 module.exports = {
   sum,
   sub,
   times,
-  div
-}
+  div,
+  pow,
+};

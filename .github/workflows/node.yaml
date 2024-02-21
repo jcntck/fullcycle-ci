@@ -1,6 +1,9 @@
 name: ci-challenge-workflow
 
-on: 
+on:
+  push:
+    branches:
+      - develop
   pull_request:
     branches:
       - develop
